@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Test') {
+            steps {
+                echo 'Hi from main ...'
+                echo env.BRANCH_NAME
+            }
+        }
+
+    }
+}

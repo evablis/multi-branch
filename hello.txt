@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Hi from master branch 
+=======
+Hi, from dev branch
+>>>>>>> 0fb0ba99942814f827dda7dd3dc6d03745f4312c
