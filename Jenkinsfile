@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Hi from dev ...'
                 sh 'pwd'
-                echo '${env.BRANCH}'
+                echo env.BRANCH 
             }
         }
 
