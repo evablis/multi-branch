@@ -1,7 +1,11 @@
 
 pipeline {
-    agent any
-
+    agent {
+        node {
+        label 'master'
+        customWorkspace env.BRANCH
+        }
+    }
     stages {
 
         stage('Test') {
