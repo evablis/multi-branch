@@ -11,6 +11,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Hi from dev ...'
+                sh 'pwd'
+                echo '${env.BRANCH}'
             }
         }
 
