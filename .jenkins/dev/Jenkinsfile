@@ -1,12 +1,17 @@
 pipeline {
-    agent any
-
+    agent {
+        node {
+        label 'master'
+        customWorkspace env.BRANCH
+        }
+    }
+    
     stages {
 
         stage('Test') {
             steps {
-                echo 'Hi from dev ...'
-                echo env.BRANCH_NAME
+                echo 'Hi from main ...'
+                echo env.BRANCH
             }
         }
 
