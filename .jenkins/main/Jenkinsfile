@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-        label 'master'
+        label 'dev-server'
         customWorkspace env.BRANCH
         }
     }
@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Hi from main ...'
+                sh 'pwd'
                 echo env.BRANCH
         }
 
