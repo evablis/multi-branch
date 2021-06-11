@@ -3,7 +3,7 @@ pipeline {
     agent {
         node {
         label 'dev-server'
-        customWorkspace  '${JOB_BASE_NAME}/${BRANCH}'
+        customWorkspace  "${JOB_BASE_NAME}/${BRANCH}"
         }
     }
     stages {
