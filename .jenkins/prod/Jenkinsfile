@@ -2,7 +2,7 @@ pipeline {
     agent {
         node {
         label 'master'
-        customWorkspace env.BRANCH
+        customWorkspace env.JOB_NAME/env.BRANCH
         }
     }
 
