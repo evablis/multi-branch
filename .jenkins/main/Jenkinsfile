@@ -19,8 +19,9 @@ pipeline {
             steps {
                 echo 'Deployment'
                     sh ''' 
+                    echo $JOB_NAME
                     ssh eva@evablis "  
-                    pwd && ls s
+                    pwd && ls
                     "
                     '''
                     } 
