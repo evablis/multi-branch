@@ -15,5 +15,15 @@ pipeline {
         }
 
     }
+        stage('Deploy') {
+            steps {
+                echo 'Deployment'
+                    sh ''' 
+                    ssh eva@evablis "  
+                    pwd && ls s
+                    "
+                    '''
+                    } 
+                }
   }
 }
